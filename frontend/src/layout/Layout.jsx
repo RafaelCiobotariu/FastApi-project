@@ -6,8 +6,26 @@ export function Layout() {
   return (
     <div className="app-layout">
       <header className="app-header">
-        <div></div>
+        <div className="header-content">
+          <h1>Code Challange</h1>
+          <nav>
+            <SignedIn>
+              <Link to="/">Generate Challange</Link>
+              <Link to="/history">History</Link>
+              <UserButton />
+            </SignedIn>
+          </nav>
+        </div>
       </header>
+
+      <main className="app-main">
+        <SignedOut>
+          <Navigate to="/sign-in" replace />
+        </SignedOut>
+        <SignedIn>
+          <Outlet />
+        </SignedIn>
+      </main>
     </div>
   );
 }
