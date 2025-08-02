@@ -32,14 +32,14 @@ export function HistoryPanel() {
     <div className="history-panel">
       <h2>History</h2>
       {history.length === 0 ? (
-        <p>No challange history</p>
+        <p>No challenge history</p>
       ) : (
         <div className="history-list">
-          {history.map((challange) => {
+          {history.map((challenge) => {
             return (
               <MCQChallange
-                challange={challange}
-                key={challange.id}
+                challenge={challenge}
+                key={challenge.id}
                 showExplanation
               />
             );

@@ -7,10 +7,10 @@ export function Layout() {
     <div className="app-layout">
       <header className="app-header">
         <div className="header-content">
-          <h1>Code Challange</h1>
+          <h1>Code Challenge</h1>
           <nav>
             <SignedIn>
-              <Link to="/">Generate Challange</Link>
+              <Link to="/">Generate Challenge</Link>
               <Link to="/history">History</Link>
               <UserButton />
             </SignedIn>
